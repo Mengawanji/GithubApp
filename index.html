@@ -3,9 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Github App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <div class="profile"><img src="Image/git-logo.png" alt=""></div>
+        <h2>Github </h2>
+        <div class="display">
+            <input type="text" id="gitName"  placeholder="Enter Github Name">
+            <div class="error" id="userError"></div>
+        </div>
+
+        <button onclick="getProfile()" target="_blank" > Search </button>
+    </div>
     
+
+    <script src="script.js"></script>
 </body>
 </html>
