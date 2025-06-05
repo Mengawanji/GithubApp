@@ -5,19 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Github App</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
     <div class="container">
-        <div class="profile"><img src="Image/git-logo.png" alt=""></div>
-        <h2>Github </h2>
-        <div class="display">
-            <input type="text" id="gitName"  placeholder="Enter Github Name">
-            <div class="error" id="userError"></div>
+        <div class="auth">
+            <div class="profile"><img src="Image/git-logo.png" alt=""></div>
+            <h2>Github </h2>
+            <div class="display">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="gitName"  placeholder="Enter Github usern ame">
+                <div class="error" id="userError"> </div>
+            </div>
+            <button onclick="getProfile()" > Search </button> 
         </div>
-
-        <button onclick="getProfile()" target="_blank" > Search </button>
+        <div class="info-box">
+            <div class="user-details">
+                <div class="img-box">
+                    <img src="" alt="">
+                </div>
+                <div class="details">
+                    <h3 class="name"></h3>
+                    <h3 class="username"></h3>
+                    <span class="join-date"></span>
+                </div>
+                <p class="bio"></p>
+                <div class="user-profile">
+                    <div class="repos">
+                        <h2></h2>  
+                        <span>Repos</span>
+                    </div>
+                    <div class="followers">
+                        <h2></h2>
+                        <span>Followers</span>
+                    </div>
+                    <div class="following">
+                        <h2></h2>
+                        <span>following</span>
+                    </div>   
+                </div>
+                <div class="user-other-details">
+                    <p><i class="fa-solid fa-building"></i></p>
+                    <p><i class="fa-solid fa-location-pin"></i></p>
+                    <p><i class="fa-solid fa-link"></i></p>
+                    <p><i class="fa-brands fa-x-twitter"></i></p>
+                </div>
+            </div>
+       </div>    
+    </div>
     </div>
     
+
 
     <script src="script.js"></script>
 </body>
